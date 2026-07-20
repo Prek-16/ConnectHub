@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectHub - Feed</title>
+
+    <link rel="stylesheet" href="../css/feed.css">
+</head>
+
+<body>
+
+    <!-- ================= Navbar ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <h2>ConnectHub</h2>
+            <p>Share • Connect • Inspire</p>
+        </div>
+
+        <div class="nav-right">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchUser"
+                    placeholder="Search users...">
+
+            </div>
+
+            <a href="create-post.html">
+                <button>Create Post</button>
+            </a>
+
+            <a href="profile.html">
+                <button>My Profile</button>
+            </a>
+
+            <a href="messages.html">
+
+                <button>
+
+                    💬 Messages
+
+                    <span id="messageBadge"></span>
+
+                </button>
+
+            </a>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= Layout ================= -->
+
+    <div class="layout">
+
+        <!-- Left Sidebar -->
+
+        <aside class="left-sidebar">
+
+            <div class="sidebar-card">
+
+                <h3>Menu</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="feed.html">
+                            🏠 Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="explore.html">
+                            📷 Explore
+                        </a>
+                    </li>
+
+                    <li>
+
+                        <a href="trending.html">
+
+                            🔥 Trending
+
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="profile.html">
+                            👤 Profile
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </aside>
+
+        <!-- Center Feed -->
+
+        <main class="feed-container">
+
+            <div class="feed-title">
+
+                <h2>Today's Feed</h2>
+
+                <p>See what your friends are sharing today.</p>
+
+            </div>
+
+            <!-- Loading -->
+
+            <div id="loading">
+
+                <h3>Loading Posts...</h3>
+
+            </div>
+
+            <!-- Error -->
+
+            <div
+                id="errorMessage"
+                style="display:none;">
+
+                <h3>⚠ Unable to load posts.</h3>
+
+            </div>
+
+            <!-- Empty -->
+
+            <div
+                id="emptyFeed"
+                style="display:none;">
+
+                <h2>📭</h2>
+
+                <p>No posts available.</p>
+
+                <small>
+                    Be the first one to share something.
+                </small>
+
+            </div>
+
+            <!-- Posts -->
+
+            <div id="postsContainer"></div>
+
+        </main>
+
+        <!-- Right Sidebar -->
+
+        <aside class="right-sidebar">
+
+            <div class="profile-card">
+
+                <img
+                    id="userProfileImage"
+                    src="../images/default-profile.png"
+                    alt="Profile">
+
+                <h3>
+                    Welcome 👋
+                </h3>
+
+                <p id="welcomeUser">
+
+                    ConnectHub User
+
+                </p>
+
+                <hr>
+
+                <div class="profile-info">
+
+                    <p>📸 Share Moments</p>
+
+                    <p>❤️ Connect with Friends</p>
+
+                    <p>🌎 Explore Community</p>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- JS -->
+
+    <script src="../js/search.js"></script>
+
+    <script src="../js/feed.js"></script>
+
+</body>
+
+</html>

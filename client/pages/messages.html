@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ConnectHub Messages</title>
+
+    <link rel="stylesheet" href="../css/messages.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <h2>💬 ConnectHub Chat</h2>
+
+        <a href="feed.html">
+
+            <button>← Back To Feed</button>
+
+        </a>
+
+    </nav>
+
+    <div class="chat-layout">
+
+        <!-- Users -->
+
+        <div class="users-list">
+
+            <h3>Users</h3>
+
+            <div id="usersContainer"></div>
+
+        </div>
+
+        <!-- Chat -->
+
+        <div class="chat-box">
+
+            <div id="chatHeader">
+
+                <h3>Select a User</h3>
+
+            </div>
+
+            <div id="messagesContainer"></div>
+
+            <div class="send-box">
+
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Type message...">
+
+                <button id="sendBtn">
+
+                    Send
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../js/messages.js"></script>
+
+</body>
+
+</html>

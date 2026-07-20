@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Profile</title>
+
+    <link rel="stylesheet" href="../css/feed.css">
+
+    <link rel="stylesheet" href="../css/profile.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <h2>ConnectHub</h2>
+
+            <p>Share • Connect • Inspire</p>
+
+        </div>
+
+        <div class="nav-right">
+
+            <a href="profile.html">
+
+                <button>Back</button>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- Edit Card -->
+
+    <div class="profile-container">
+
+        <div class="profile-card-large">
+
+            <h2>Edit Profile</h2>
+
+            <br>
+
+            <form id="editProfileForm">
+
+                <div class="image-preview">
+
+                    <img
+                        id="previewImage"
+                        src="../images/default-profile.png">
+
+                </div>
+
+                <br>
+
+                <input
+                    type="file"
+                    id="profile_image"
+                    accept="image/*">
+
+                <br><br>
+
+                <input
+                    type="text"
+                    id="full_name"
+                    placeholder="Full Name"
+                    required>
+
+                <br><br>
+
+                <textarea
+                    id="bio"
+                    rows="5"
+                    placeholder="Write something about yourself..."></textarea>
+
+                <br><br>
+
+                <button
+                    type="submit">
+
+                    Save Changes
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="../js/edit-profile.js"></script>
+
+</body>
+
+</html>

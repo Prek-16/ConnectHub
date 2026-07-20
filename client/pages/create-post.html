@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post - ConnectHub</title>
+
+    <link rel="stylesheet" href="../css/feed.css">
+</head>
+
+<body>
+
+    <div class="create-post-container">
+
+        <h2>Create New Post</h2>
+
+        <form id="createPostForm">
+
+            <div class="form-group">
+                <label>Select Image</label>
+                <input
+                    type="file"
+                    id="image"
+                    accept="image/*"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label>Caption</label>
+
+                <textarea
+                    id="caption"
+                    rows="4"
+                    placeholder="Write something..."
+                    required></textarea>
+            </div>
+
+            <button type="submit">
+                Create Post
+            </button>
+
+            <br><br>
+
+            <a href="feed.html">⬅ Back to Feed</a>
+
+        </form>
+
+    </div>
+
+    <script src="../js/create-post.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ConnectHub - Register</title>
+
+    <link rel="stylesheet" href="../css/auth.css">
+
+</head>
+
+<body>
+
+<div class="auth-container">
+
+    <div class="auth-card">
+
+        <h1>ConnectHub</h1>
+
+        <p>Create your account</p>
+
+        <form id="registerForm">
+
+            <input
+                type="text"
+                id="full_name"
+                placeholder="Full Name"
+                required>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Username"
+                required>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                required>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required>
+            <div class="form-group">
+
+        <label>Profile Photo</label>
+
+        <input
+            type="file"
+            id="profile_image"
+            accept="image/*"
+            required>
+
+        </div>
+
+        <div class="image-preview">
+
+            <img
+                id="previewImage"
+                src="../images/default-profile.png"
+                alt="Preview">
+
+        </div>
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+        <p>
+
+            Already have an account?
+
+            <a href="login.html">
+
+                Login
+
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+<script src="../js/register.js"></script>
+
+</body>
+
+</html>
